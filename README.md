@@ -10,3 +10,5 @@ From the above approach the page looks like below image:
 
 
 ![alt text](home_page.png)
+sample gif:
+![alt text](stopwatch.gif)
