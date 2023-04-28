@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title which shows on title bar of browser -->
+    <title>Stopwatch</title>
+    <!-- favicon(image with .ico extension) which shows on title bar of browser -->
+<link rel ="shortcut icon" type ="image/icon" href="../favicon (3).ico">
+<!-- External Css file -->
+    <link rel="stylesheet" href="stopwatch.css">
+    <!-- Metadata(information about the page or content) -->
+    <meta name="description" content="Stopwatch with minutes seconds and milliseconds">
+    <meta name="keywords" content="Stopwatch">
+</head>
+
+<body>
+
+    <div class="stopwatch">  <!-- Container with class name stopwatch -->
+        
+         <div class = "wrapper"> <!-- Nested Container with class name wrapper -->
+            
+            <h1 id = "stop">Stopwatch</h1>  <!--heading-->
+            <!-- paragraph(block element) tag used for seconds minutes and milliseconds-->
+       <p ><span id ="minutes">00<sub>Min</sub></span><span id ="colon1">: </span><span id="seconds">00<sub>Sec</sub></span><span id = "colon2">: </span><span id="milliseconds">00<sub>millisec</sub></span></p>
+       <!-- three button tag is used to create a clickable button start,stop and reset with there id-->
+        <button id="button-start">Start</button>
+        <button id="button-stop">Stop</button>
+        <button id="button-reset">Reset</button>
+        <!--used for apperence with which shows inline css-->
+        <div style="color: #fff; margin-top: 5%;
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-align: center;">&gt; Countdown Timer</div>
+    </div>
+    </div>
+    <!-- Extenal JavaScript file-->
+    <script src="stopwatch.js">
+        
+
+    </script>
+</body>
+
+</html>
