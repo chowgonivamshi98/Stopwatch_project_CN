@@ -1,0 +1,84 @@
+/* import font from google fonts(it should be the top of the page */
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+/* Type selector */
+body{
+  background-color: #222242;  /*property name and values in hex */
+  font-family: 'Bruno Ace', cursive;    /* font-family property value which we are imported */
+  height: 100%; /* height of the body*/
+text-align: center; /*this property with value center used to align the text in center */
+}
+/* class selector with class value of the html document */
+.wrapper{
+  width: 800px;    /* width and margin of the wrapper class */
+  margin: 30px auto;
+}
+/* id selector with class value of the html document */
+#stop{
+  font-family: 'Bruno Ace', cursive; /* font-family property value which we are imported */
+  font-weight: 100;   /* used to set the text  more or less bold */
+  font-size: 2.6em;    /* size of the text(css unit 1em = relative to font size of the parent element */
+  text-transform: uppercase;  /*property used to tranform text to uppercase*/
+  margin-bottom: -20px;   /* adjust bottom space(around) to -20px */
+  margin-top: 15%;   /*adjust top space(around) to 15% of */
+  animation-name: blink;/* specifys the name of the @keyframes animations */
+  animation-duration: 1s;/*time taken to complete one cycle*/
+  animation-iteration-count: infinite;/*number of times the animation takes place*/
+}
+/*animation code keyframe with declared animation name blink*/
+@keyframes blink{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+ #milliseconds{
+  color: coral;   /* sets color*/
+ }
+/*Type selector*/
+button{
+  background-color: #222242; /*property name and values in hex*/
+   padding: 15px 38px; /*space inside the element top & bottom_15px left&right_38px */
+  border-radius: 28px;/* rounds the corners of the elements outer body(top,left,bottom and right )*/
+  letter-spacing: 4px; /* space between the letters */
+  margin: 5px; /* space around an elements in selector */
+}
+/* descendant selector */
+.wrapper p sub{
+  font-size: 10px;
+}
+/*Descendant selector */
+.wrapper p{
+border:1px solid rgba(0, 0, 0, 0.3); /* border property with blodness type and color(used rgba-red,green,blue and alpha(opacity-0.3) */
+color: black;/*text color inside the p element  */
+width: 80%; /* width of p element */
+font-size: 3em; /*size of the text(css unit 1em = relative to font size of the parent element*/
+padding: 23px 10px;/*space inside the element top & bottom_23px left&right_10px */
+margin-top: 10%;/*adjust top space(around) to 10%  */
+border-right-width: 20px;/* property used set the width of right side border*/
+border-left-width: 20px;/* property used set the width of left side border*/
+  margin-left: 8%;/* adjust left space(around) to -20px */
+  animation-name: shine;/* specifys the name of the @keyframes animations */
+  animation-duration: 3s; /*time taken to complete one cycle*/
+  animation-iteration-count: infinite;/*number of times the animation takes place*/
+}
+/*animation code keyframe with declared animation name shine*/
+@keyframes shine{
+0%,100%{
+  box-shadow: 0px 0px 32px -12px rgba(246, 180,0, 0.5);
+}
+50%{
+  box-shadow: 0px 0px 32px 3px rgba(246, 180,0, 0.5);
+}
+}
+/* pseudo_classes*/
+/* hover over the button, it will change color*/
+button:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #222242;
+  border: solid 1px #fff;
+  color: #ffa600;
+} 
